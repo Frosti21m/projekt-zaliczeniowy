@@ -2,7 +2,7 @@
 
 ## Opis projektu
 Aplikacja konsolowa napisana w języku Python, służąca do wykonywania podstawowych obliczeń finansowych.  
-Program umożliwia obliczanie przyszłej wartości inwestycji, rat kredytowych, generowanie harmonogramu spłat, przeliczanie walut oraz zapisywanie historii operacji do pliku.
+Program umożliwia obliczanie przyszłej wartości inwestycji, obliczanie rat kredytowych, generowanie harmonogramu spłat, przeliczanie walut oraz zapisywanie historii operacji do pliku.
 
 ## Funkcjonalności
 - obliczanie wartości przyszłej inwestycji:
@@ -20,6 +20,20 @@ Program umożliwia obliczanie przyszłej wartości inwestycji, rat kredytowych, 
 - `tests/` – testy jednostkowe
 - `data/` – pliki pomocnicze, np. historia i kursy walut
 - `main.py` – punkt wejścia do programu
+
+## Wykorzystane klasy
+- `Investment`
+- `Loan`
+- `CurrencyConverter`
+- `HistoryManager`
+
+## Obsługa błędów
+Program obsługuje nieprawidłowe dane wejściowe, takie jak:
+- ujemne kwoty,
+- niepoprawne oprocentowanie,
+- nieznane waluty,
+- błędny format pliku JSON,
+- nieprawidłowe dane wpisane przez użytkownika w menu.
 
 ## Wymagania
 - Python 3.10+
